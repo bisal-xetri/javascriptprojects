@@ -148,22 +148,25 @@ a {
 .arrow-control {
     display: flex;
     justify-content: space-between;
-    margin-right: 300px;
+    margin-right: 120px;
 }
 
 .arrow-control .arrow {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     cursor: pointer;
 }
 
 .arrow-control .arrow span img {
     height: 10px;
 }
-
-.shop-mealtime {
-    margin-right: 230px;
+.mealtime-section{
+    display: flex;
+    justify-content: space-between;
 }
+/* .shop-mealtime {
+   ma
+} */
 
 .shop-mealtime h1 {
     font-family: 'Roboto';
@@ -192,6 +195,7 @@ a {
 
 .featured-mealtime {
     margin-top: 20px;
+    margin-left: 250px;
 }
 
 .featured-mealtime h3 {
@@ -202,12 +206,16 @@ a {
     line-height: 22px;
     letter-spacing: .1px;
 }
+.meal-details::-webkit-scrollbar{
+    display: none;
+}
 
 .meal-details {
     display: flex;
     gap: 20px; /* Space between items */
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: scroll; /* Hide horizontal overflow */
     white-space: nowrap; /* Prevent wrapping */
+    width: 900px;
 }
 
 .meal-details .meal-description {
