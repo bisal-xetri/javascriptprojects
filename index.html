@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      <span>This is a global announcement!</span>
+      <span class="close">&times;</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+      <h1><a href="">LOGO</a></h1>
+      <ul class="navitem">
+        <li>
+          <a href="#mealtime">Mealtime</a>
+          <!-- Submenu for Mealtime -->
+          <ul class="submenu">
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+            <li><a href="#snacks">Snacks</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#playtime">PlayTime</a>
+          <!-- Submenu for PlayTime -->
+          <ul class="submenu">
+            <li><a href="#toys">Toys</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#puzzles">Puzzles</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#bathtime">Bathtime</a>
+          <!-- Submenu for Bathtime -->
+          <ul class="submenu">
+            <li><a href="#soaps">Soaps</a></li>
+            <li><a href="#shampoos">Shampoos</a></li>
+            <li><a href="#bath-toys">Bath Toys</a></li>
+            <li><a href="#towels">Towels</a></li>
+            <li><a href="#bathrobes">Bathrobes</a></li>
+            <li><a href="#bubbles">Bubbles</a></li>
+            <li><a href="#lotions">Lotions</a></li>
+            <li><a href="#bath-accessories">Bath Accessories</a></li>
+          </ul>
+        </li>
+        <li><a href="#theplayboxes">The Play Boxes<sup>New!</sup></a></li>
+        <li><a href="#gifts">Gifts</a></li>
+        <li><a href="#bestseller">Best Seller</a></li>
+      </ul>
+    </div>
+
+    <!-- Mealtime section -->
+    <div class="mealtime">
+      <div class="mealtime-section">
+        <div class="shop-mealtime">
+          <h1>Shop Mealtime</h1>
+          <ul>
+            <li><a href="#">High Chair</a></li>
+            <li><a href="#">Booster</a></li>
+            <li><a href="#">Tableware & Bibs</a></li>
+            <li><a href="#">Mealtime Accessories</a></li>
+            <li><a href="#">Bundle & Save</a></li>
+            <a class="see-more" href="#">All Mealtime</a>
+          </ul>
+        </div>
+        <div class="featured-mealtime">
+          <div class="arrow-control">
+            <h3>Featured Mealtime</h3>
+            <div class="arrow">
+              <span class="next-button"><img src="image/Vector 21.png" alt="Next"></span>
+              <span class="prev-button"><img src="image/right-arrow.png" alt="Prev"></span>
+              
+            </div>
+          </div>
+          <div class="meal-details">
+            <div class="meal-description">
+              <div class="image">
+                <img src="image/image 81.png" alt="">
+              </div>
+              <p class="small-title">Best Seller</p>
+              <p class="title">The Chair</p>
+            </div>
+            <div class="meal-description">
+              <div class="image">
+                <img src="image/image 67.png" alt="">
+              </div>
+              <p class="small-title">Best Seller</p>
+              <p class="title">First Bites Full Kit</p>
+            </div>
+            <div class="meal-description">
+              <div class="image">
+                <img src="image/image 81 (1).png" alt="">
+              </div>
+              <p class="small-title">Best Seller</p>
+              <p class="title">Suction Plate</p>
+            </div>
+            <div class="meal-description">
+              <div class="image">
+                <img src="image/image 81 (2).png" alt="">
+              </div>
+              <p class="small-title">Best Seller</p>
+              <p class="title">Little Cup</p>
+            </div>
+            <div class="meal-description">
+              <div class="image">
+                <img src="image/image 81 (2).png" alt="">
+              </div>
+              <p class="small-title">Best Seller</p>
+              <p class="title">First Bites Full Kit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- <script>
+    const mealDetails = document.querySelector('.meal-details');
+    const nextButton = document.querySelector('.next-button');
+    const prevButton = document.querySelector('.prev-button');
+
+    let scrollAmount = 0;
+
+    nextButton.addEventListener('click', () => {
+      mealDetails.scrollTo({
+        top: 0,
+        left: (scrollAmount += 300),
+        behavior: 'smooth'
+      });
+    });
+
+    prevButton.addEventListener('click', () => {
+      mealDetails.scrollTo({
+        top: 0,
+        left: (scrollAmount -= 300),
+        behavior: 'smooth'
+      });
+    }); -->
+  <!-- </script> -->
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: "Merriweather Sans", serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+
+/* Top Announcement Bar */
+.top-bar {
+    width: 100vw;
+    background-color: #0F234C;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-bar span {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 21px;
+    font-size: 14px;
+    letter-spacing: 0.2;
+}
+.top-bar .close {
+    position: absolute;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.nav {
+    width: 100vw;
+    height: 68px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    border-bottom: 1px solid #EEEDEB;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav h1 a {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    color: #0F234C;
+    font-size: 30px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav ul li {
+    font-weight: 300;
+    font-style: italic;
+    line-height: 21px;
+    font-size: 14px;
+    letter-spacing: 0.2;
+    list-style: none;
+    position: relative; /* Necessary for submenu positioning */
+}
+
+sup {
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: .1px;
+    color: #3057A7;
+}
+
+sup:hover {
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0F234C;
+}
+
+.nav ul li a:hover {
+    background-color: #ECF3FF;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+/* Submenu Styles */
+.navitem .submenu {
+    /* Default: hidden */
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEDEB;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    width: 200px; /* Fixed width for consistency */
+    z-index: 1000;
+}
+
+.submenu li {
+    padding: 8px 16px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.submenu li a {
+    color: #0F234C;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #ECF3FF;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+/* Show Submenu on Hover */
+.nav ul li:hover > .submenu {
+    display: block; /* Show only on hover */
+}
+
+.mealtime-section {
+    display: flex;
+    padding: 30px 0 30px 118px;
+}
+
+.arrow-control {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 300px;
+}
+
+.arrow-control .arrow {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.arrow-control .arrow span img {
+    height: 10px;
+}
+
+.shop-mealtime {
+    margin-right: 230px;
+}
+
+.shop-mealtime h1 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.shop-mealtime ul li {
+    font-weight: 300;
+    font-style: italic;
+    line-height: 27px;
+    font-size: 18px;
+    color: #0F234C;
+    padding-bottom: 20px;
+}
+
+.shop-mealtime .see-more {
+    text-decoration: underline;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.featured-mealtime {
+    margin-top: 20px;
+}
+
+.featured-mealtime h3 {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: .1px;
+}
+
+.meal-details {
+    display: flex;
+    gap: 20px; /* Space between items */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.meal-details .meal-description {
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    padding: 20px 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    height: 298px;
+    width: 195px;
+    display: inline-block; /* Ensure items are in a single line */
+}
+
+.meal-details .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 220px;
+}
+
+.image img {
+    object-fit: cover;
+}
+
+.meal-description .small-title {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 8px;
+    color: #828282;
+    line-height: 9px;
+    letter-spacing: 1.6px;
+    padding: 3px 10px;
+}
+
+.meal-description .title {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    padding: 3px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submenu {
+        position: static; /* Adjust for mobile layout */
+        box-shadow: none;
+        width: 100%; /* Full width on mobile */
+    }
+}
