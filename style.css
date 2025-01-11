@@ -14,6 +14,7 @@ body {
     overflow-y: scroll;
     width: 100%;
     height: 100%;
+
 }
 
 /* Top Announcement Bar */
@@ -140,14 +141,26 @@ a {
     border-radius: 5px;
     padding: 4px 8px;
 }
+.new-badge {
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: .1px;
+    color: #3057A7;
+    vertical-align: super; 
+    font-style: italic; 
+}
+
 
 /* Show Submenu on Hover */
 .nav ul li:hover > .submenu {
     display: block; /* Show only on hover */
 }
-
+.mealtime{
+    width: 100%;
+}
 .mealtime-section {
     display: flex;
+     justify-content: space-between;
     padding: 30px 0 30px 118px;
 }
 
@@ -156,6 +169,7 @@ a {
     justify-content: space-between;
     margin-right: 70px;
 }
+
 
 .arrow-control .arrow {
     display: flex;
@@ -166,17 +180,14 @@ a {
 .arrow-control .arrow span img {
     height: 10px;
 }
-.mealtime-section{
-    display: flex;
-    justify-content: space-between;
-}
+
 /* .shop-mealtime {
    ma
 } */
 
 .shop-mealtime h1 {
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: 700;
     font-size: 28px;
     line-height: 32px;
     padding-bottom: 20px;
@@ -206,7 +217,7 @@ a {
 
 .featured-mealtime h3 {
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
     font-size: 18px;
     line-height: 22px;
@@ -222,21 +233,29 @@ a {
     overflow-x: scroll; /* Hide horizontal overflow */
     white-space: nowrap; /* Prevent wrapping */
     width: 800px;
+    
+}
+.play-detail {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap; /* Prevent wrapping */
+   margin-right: 20px;
+    
 }
 
-.meal-details .meal-description {
+.meal-details .meal-description, .play-detail .meal-description {
     margin-top: 10px;
     background-color: #F2F2F2;
     overflow: hidden;
     padding: 20px 10px;
     border-radius: 5px;
     flex-shrink: 0;
-    height: 298px;
+     
     width: 195px;
     display: inline-block; /* Ensure items are in a single line */
 }
 
-.meal-details .image {
+.meal-details .image, .play-detail .image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,14 +267,15 @@ a {
     object-fit: cover;
 }
 
-.meal-description .small-title {
+.meal-description .small-title{
     font-weight: 300;
     font-style: italic;
     font-size: 8px;
     color: #828282;
     line-height: 9px;
     letter-spacing: 1.6px;
-    padding: 3px 10px;
+    margin-top: 10px;
+    /* padding: 3px 10px; */
 }
 
 .meal-description .title {
@@ -264,8 +284,79 @@ a {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.3px;
-    padding: 3px 10px;
+    /* padding: 3px 10px; */
 }
+.meal-description .price {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+  padding-top:-10px ;
+    color:#3057A7 ;
+}
+
+.mealtime .shop-mealtime ul li a img{
+  vertical-align: middle;
+  
+   
+}
+
+.info-section .year{
+display: flex;
+gap:20px;
+}
+.info-section .year p{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    transition: color 0.3s ease,
+     text-decoration 0.3s ease;
+}
+.info-section .year p:hover{
+    color: #3057A7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.info-section .play-time p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+  padding-top:-10px ;
+  text-align: center;
+    color:#0F234C ;
+}
+
+.info-section .play-time{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap :20px;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    margin-top: 50px; margin-left: 30px;
+  
+}
+.info-section .play-time .img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+height: 45px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEDEB;
+}
+.info-section .play-time .img-div img{
+    width: 28px;
+    height: 28px;
+}
+
+/* play css */
 
 /* Responsive Design */
 @media (max-width: 768px) {
