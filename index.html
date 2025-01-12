@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -60,6 +61,92 @@
         <li><a href="#bestseller">Best Seller</a></li>
       </ul>
     </div>
+  
+    
+
+<!-- hamburger Menu -->
+<nav id="hamburger-nav">
+  <div class="logo-ham">
+    <div class="logo"><span>LOGO</span></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="best-seller">
+    <div class="best-seller-title">
+      <h4>Best Seller</h4>
+      <a href="">Shop all</a>
+    </div>
+    <div class="best-seller-item">
+      <div class="best-seller-img"><img src="image/image 81.png" alt=""></div>
+      <div class="best-seller-img"><img src="image/image 67.png" alt=""></div>
+      <div class="best-seller-img"><img src="image/image 81 (1).png" alt=""></div>
+    </div>
+  </div>
+  <ul class="navitem">
+    <li>
+      <div class="nav-items">
+        <a href="#mealtime">Mealtime</a> <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <!-- Submenu for Mealtime -->
+      <ul class="submenu">
+        <li><a href="#breakfast">Breakfast</a></li>
+        <li><a href="#lunch">Lunch</a></li>
+        <li><a href="#dinner">Dinner</a></li>
+        <li><a href="#snacks">Snacks</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+        <li><a href="#drinks">Drinks</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="nav-items">
+        <a href="#playtime">PlayTime</a> <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <!-- Submenu for PlayTime -->
+      <ul class="submenu">
+        <li><a href="#toys">Toys</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#puzzles">Puzzles</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="nav-items">
+        <a href="#bathtime">Bathtime</a> <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <!-- Submenu for Bathtime -->
+      <ul class="submenu">
+        <li><a href="#soaps">Soaps</a></li>
+        <li><a href="#shampoos">Shampoos</a></li>
+        <li><a href="#bath-toys">Bath Toys</a></li>
+        <li><a href="#towels">Towels</a></li>
+        <li><a href="#bathrobes">Bathrobes</a></li>
+        <li><a href="#bubbles">Bubbles</a></li>
+        <li><a href="#lotions">Lotions</a></li>
+        <li><a href="#bath-accessories">Bath Accessories</a></li>
+      </ul>
+    </li>
+    <li>
+      <div class="nav-items">
+        <a href="#theplayboxes">The Play Boxes <sup>New!</sup></a> <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </li>
+    <li>
+      <div class="nav-items">
+        <a href="#gifts">Gifts</a> <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </li>
+    <li>
+      <div class="nav-items">
+        <a href="#bestseller">Best Seller</a> <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </li>
+  </ul>
+</nav>
 
     <!-- Mealtime section -->
     <div class="mealtime">
@@ -339,9 +426,43 @@
     </div>
   </div>
 </div>
+
+
+<!-- slider with accordion -->
+ <div class="slider-accordion">
+  <div class="slider-hero">
+  <div class="image-video">
+    <div class="slide-div">
+      <img src="image/caraccordian.jpg" alt="Image">
+    </div>
+  </div>
+  <div class="slider-accordion-details">
+    <h1 class="slider-title">It’s not magic,</br>
+      It’s science</h1>
+      <div  class="detail-middel">
+      <h3 class="sub-title bold-border ">Lorem Ipsum</h3>
+      <p>Lorem ipsum dolor sit amet consectetur.
+         Euismod ultricies sed ipsum duis at arcu sit urna proin. 
+        Erat feugiat diam pharetra nisl.</p>
+        <h3 class="sub-title gray-title thin-border">Lorem Ipsum dolor</h3>
+        <h3 class="sub-title gray-title thin-border " >Lorem Ipsum dolor</h3>
+        <h3 class="sub-title gray-title thin-border">Lorem Ipsum dolor</h3>
+      </div>
+        <div class="footer">
+          <h4>A friendly feminder</h4>
+          <p>Alcohol will still probably affect your well-being and your sleep.
+             A healthy breakfast and coffee should have you up and running by mid-morning.</p>
+        </div>
+
+  </div>
+</div>
+ </div>
     
   </div>
+  <!-- <script src="script.js"></script> -->
   <script>
+   
+
     const mealDetails = document.querySelector('.meal-details');
     const nextButton = document.querySelector('.next-button');
     const prevButton = document.querySelector('.prev-button');
@@ -365,5 +486,6 @@
 
    
 </script>
+<!-- <script src="script.js"></script> -->
 </body>
 </html>
