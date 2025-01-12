@@ -460,7 +460,7 @@ height: 45px;
 #hamburger-nav{
     max-width: 769px;
     padding: 20px;
-    
+    display: none;
     /* background-color: red; */
 }
 #hamburger-nav .logo-ham{
@@ -558,6 +558,10 @@ height: 45px;
   .nav{
     display: none;
     
+  }
+  #hamburger-nav{
+
+    display: block;
   }
     .submenu {
         position: static; /* Adjust for mobile layout */
