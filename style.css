@@ -266,6 +266,9 @@ a {
 
 .image img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
 .meal-description .small-title{
@@ -380,12 +383,16 @@ height: 45px;
 .slider-accordion .slide-div{
     height: 750px;
     width: 774px;
+   
 }
-.slider-accordion .slide-div img{
+.slide-div { display: none; }
+.slide-div.active { display: block; }
+.slider-accordion .slide-div img, .slider-accordion .slide-div video{
     width: 100%; 
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
+    
 }
 .slider-accordion-details{
     display: flex;
@@ -718,6 +725,18 @@ margin-top: -30px;
         flex-wrap: wrap;
         margin-left: -90px;
     }
+    
+    .shop-mealtime h1 {
+        
+        font-size: 20px;
+       
+      
+    }
+    
+    
+    
+    
+    
     
     
 
