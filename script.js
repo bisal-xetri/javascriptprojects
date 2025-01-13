@@ -80,3 +80,24 @@ document.addEventListener('visibilitychange', () => {
 // });
 
 nextSlide();
+
+
+//submenu on mobile
+function toggleSubMenu(clickedIcon) {
+  var navItems = document.querySelectorAll("#hamburger-nav .submenu-ham");
+
+  // Check if the clicked submenu is already open
+  var submenu = clickedIcon.parentNode.nextElementSibling;
+  var isOpen = submenu.classList.contains('show');
+
+  // Remove 'show' class from all submenus
+  navItems.forEach(function(navItem) {
+    navItem.classList.remove('show');
+  });
+
+  // Toggle 'show' class based on the current state
+  if (!isOpen) {
+    submenu.classList.add('show');
+  }
+}
+
