@@ -15,6 +15,7 @@ body {
     overflow-y: scroll;
     width: 100%;
     height: 100%;
+  
 
 }
 
@@ -22,13 +23,13 @@ body {
 .top-bar {
     position: sticky;
     top:0;
-    width: 100vw;
+    width: 100%;
     background-color: #0F234C;
     height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-     z-index: 1000
+     z-index: 1000;
 }
 
 .top-bar span {
@@ -48,7 +49,7 @@ body {
 
 /* Navigation Bar */
 .nav {
-    width: 100vw;
+    width: 100%;
     height: 68px;
     background-color: #FFFFFF;
     display: flex;
@@ -158,6 +159,7 @@ a {
 }
 .mealtime{
     width: 100%;
+    
 }
 .mealtime-section {
     display: flex;
@@ -236,6 +238,7 @@ a {
     width: 800px;
     
 }
+
 .play-detail {
     display: flex;
     gap: 20px;
@@ -747,10 +750,7 @@ margin-top: -30px;
       
     }
     
-    
-    
-    
-    
+
     
     
 

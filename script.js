@@ -6,6 +6,8 @@
 //     icon.classList.toggle("open");
 //     navitem.classList.toggle("open");
 //   }
+
+
 function toggleMenu() {
   var nav = document.querySelector("#hamburger-nav .best-seller");
   nav.classList.toggle('show');
