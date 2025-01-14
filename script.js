@@ -6,6 +6,24 @@
 //     icon.classList.toggle("open");
 //     navitem.classList.toggle("open");
 //   }
+document.querySelectorAll('.nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+      document.querySelectorAll('.nav ul li a').forEach(el => {
+          el.classList.remove('active');
+          el.style.backgroundColor = "";
+          el.style.padding = "";
+          el.style.borderRadius = "";
+      });
+
+      link.classList.add('active');
+      link.style.backgroundColor = "#ECF3FF";
+      link.style.padding = "4px 12px";
+      link.style.borderRadius = "100px";
+  });
+});
+
+
+
 
 
 function toggleMenu() {

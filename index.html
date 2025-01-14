@@ -233,7 +233,7 @@
 
 
     <!-- Mealtime section -->
-    <div class="mealtime">
+    <section id="mealtime" class="mealtime">
       <div class="mealtime-section">
         <div class="shop-mealtime">
           <h1>Shop Mealtime</h1>
@@ -250,8 +250,8 @@
           <div class="arrow-control">
             <h3>Featured Mealtime</h3>
             <div class="arrow">
-              <span class="next-button"><img src="image/Vector 21.png" alt="Next"></span>
-              <span class="prev-button"><img src="image/right-arrow.png" alt="Prev"></span>
+              <span ><img class="next-button" src="image/Vector 21.png" alt="Next"></span>
+              <span ><img class="prev-button" src="image/right-arrow.png" alt="Prev"></span>
             </div>
           </div>
           <div class="meal-details">
@@ -314,11 +314,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
 
 <!-- Playtime section -->
-<div class="mealtime">
+<section id="playtime" class="mealtime">
   <div class="mealtime-section">
     <div class="shop-mealtime">
       <h1>Shop Playtime</h1>
@@ -370,11 +370,11 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 
     <!-- Bathtime section -->
-<div class="mealtime">
+<section id="bathtime" class="mealtime">
   <div class="mealtime-section">
     <div class="shop-mealtime">
       <h1>Shop Bathtime</h1>
@@ -418,10 +418,10 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- shop play boxes section -->
-<div class="mealtime">
+<section id="theplayboxes" class="mealtime">
   <div class="mealtime-section">
     <div class="shop-mealtime">
       <h1>Shop Play Boxes</h1>
@@ -509,7 +509,7 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 
 <!-- slider with accordion -->
@@ -551,13 +551,14 @@
  </div>
     
   </div>
-  <!-- <script src="script.js"></script> -->
-  <script>
-   
 
+ 
+   
+<script>
     // Select the necessary elements
 // Select the necessary elements
 const mealDetails = document.querySelector('.meal-details');
+console.log(mealDetails)
 const nextButton = document.querySelector('.next-button');
 const prevButton = document.querySelector('.prev-button');
 
@@ -565,8 +566,7 @@ const prevButton = document.querySelector('.prev-button');
 mealDetails.addEventListener("wheel", (e) => {
     e.preventDefault();
     mealDetails.scrollLeft += e.deltaY;
-    console.log("Wheel scrolled:", e.deltaY); // Debugging message
-});
+})
 
 // Handle Next button click
 nextButton.addEventListener("click", () => {
@@ -585,7 +585,6 @@ prevButton.addEventListener("click", () => {
 });
 
 
-   
 </script>
 <script src="script.js"></script>
 </body>
