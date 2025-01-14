@@ -102,7 +102,6 @@ document.addEventListener('visibilitychange', () => {
 nextSlide();
 
 
-//submenu on mobile
 function toggleSubMenu(clickedIcon) {
   var navItems = document.querySelectorAll("#hamburger-nav .submenu-ham");
 
@@ -110,14 +109,22 @@ function toggleSubMenu(clickedIcon) {
   var submenu = clickedIcon.parentNode.nextElementSibling;
   var isOpen = submenu.classList.contains('show');
 
-  // Remove 'show' class from all submenus
+  // Remove 'show' class from all submenus and reset the icons
   navItems.forEach(function(navItem) {
     navItem.classList.remove('show');
+  });
+
+  document.querySelectorAll("#hamburger-nav .nav-items i").forEach(function(icon) {
+    icon.classList.remove('fa-arrow-down');
+    icon.classList.add('fa-arrow-right');
   });
 
   // Toggle 'show' class based on the current state
   if (!isOpen) {
     submenu.classList.add('show');
+    clickedIcon.classList.remove('fa-arrow-right');
+    clickedIcon.classList.add('fa-arrow-down');
   }
 }
+
 

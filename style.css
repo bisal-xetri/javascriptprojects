@@ -620,12 +620,13 @@ height: 45px;
      font-size: 14px;
      line-height: 21px;
      letter-spacing: 0.1px;
+     transition: all 0.3s ease-in-out;
     
     
    }
    #hamburger-nav .navitem .submenu-ham.show{
     display: block;
-    transition: all 0.3s ease-in-out;
+   
    }
 
 #hamburger-nav .mealtime-title{

@@ -565,7 +565,7 @@ const prevButton = document.querySelector('.prev-button');
 // Handle wheel scrolling
 mealDetails.addEventListener("wheel", (e) => {
     e.preventDefault();
-    mealDetails.scrollLeft += e.deltaY;
+    mealDetails.scrollLeft += e.deltaX;
 })
 
 // Handle Next button click
